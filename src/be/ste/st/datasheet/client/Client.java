@@ -14,7 +14,7 @@ public class Client {
 	
 	public Client() {
 		super();
-		this.service = ClientBuilder.newClient().target("http://localhost:8080/timesheet");
+		this.service = ClientBuilder.newClient().target("http://localhost:8080/timesheet/service");
 		this.converter = new DTOConverter();
 	}
 	public DTOEmploye getEmployeById(int id) {
